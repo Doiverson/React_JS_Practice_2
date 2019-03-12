@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router,
-    Route,
-    }
-    from "react-router-dom";
+import { BrowserRouter as Router, Route,} from "react-router-dom";
 
 // components
 import Header from './components/headerComponent/header';
 import Homepage from './components/pages/homePage';
 import Footer from './components/footerComponent/footer';
 import Products from './components/pages/products';
+import Contact from './components/pages/contactPage';
 
 // includes
 import './assets/scss/default.scss';
@@ -21,6 +19,7 @@ class App extends Component {
             <Header />
             <Route exact path='/' component={Homepage} />
             <Route exact path='/Products' component={Products} />
+            <Route exact path='/Contact' component={Contact} />
             <Footer />
           </div>
         </Router>
